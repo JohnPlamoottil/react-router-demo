@@ -4,11 +4,12 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: calc(100vh - 140px);
+  min-height: calc(51vh - 140px);
 }
 
 .about-us ul {
   display: flex;
+  flex-direction: row;
   margin-top: 20px;
   flex-wrap: wrap;
   justify-content: center;
@@ -34,4 +35,3 @@
   text-decoration: none;
   font-size: 20px;
 }
-

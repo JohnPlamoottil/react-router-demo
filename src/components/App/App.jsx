@@ -8,6 +8,8 @@ import AboutMe from "../AboutMe/AboutMe";
 import Contact from "../AboutMe/about-me-files/Contact";
 import Hobbies from "../AboutMe/about-me-files/Hobbies";
 import MyStory from "../AboutMe/about-me-files/MyStory";
+import SiteHistory from "../AboutUs/SiteHistory";
+import SiteMission from "../AboutUs/SiteMission";
 
 import "./App.css";
 
@@ -26,7 +28,11 @@ function App() {
           <Route path="hobbies" element={<Hobbies />} />
           <Route path="my-story" element={<MyStory />} />
         </Route>
-        <Route path="/about-us" element={<AboutUs />} />
+
+        <Route path="/about-us" element={<AboutUs />}>
+          <Route path="history" element={<SiteHistory />} />
+          <Route path="mission" element={<SiteMission />} />
+        </Route>
       </Routes>
     </div>
   );
