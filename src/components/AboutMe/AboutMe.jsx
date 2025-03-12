@@ -1,9 +1,12 @@
-import "./AboutMe.css"; // New import
-import { Link } from "react-router-dom"; // New import
+// New import: Outlet
+import { Outlet, Link } from "react-router-dom";
+import "../AboutMe/about-me-files/AboutMe.css"; // New import
+// import { Link } from "react-router-dom"; // New import
 
 function AboutMe() {
   // Add the classNames shown below so the styles are applied.
   // Add the links as shown as shown below.
+  // Add an Outlet as shown below. Easy, right?
   return (
     <div className="about">
       <ul className="links">
@@ -17,7 +20,8 @@ function AboutMe() {
           <Link to="contact">My Contact Info</Link>
         </li>
       </ul>
-      <p>I&apos;m a simple person. I see Emojis, I write reviews.</p>
+      <p>I'm a simple person. I see Emojis, I write reviews.</p>
+      <Outlet />
     </div>
   );
 }

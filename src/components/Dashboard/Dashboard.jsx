@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"; // New import
 
-import "./Dashboard.css";
+import "../Dashboard/Dashboard";
 
 function Dashboard() {
   return (
