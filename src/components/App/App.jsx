@@ -12,6 +12,7 @@ import Hobbies from "../AboutMe/about-me-files/Hobbies";
 import MyStory from "../AboutMe/about-me-files/MyStory";
 import SiteHistory from "../AboutUs/SiteHistory";
 import SiteMission from "../AboutUs/SiteMission";
+import PageNotFound from "../PageNotFound/PageNotFound";
 
 import "./App.css";
 
@@ -57,6 +58,7 @@ function App() {
           <Route path="history" element={<SiteHistory />} />
           <Route path="mission" element={<SiteMission />} />
         </Route>
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );
